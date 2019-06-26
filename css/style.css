@@ -1,3 +1,4 @@
+/* -- All these styles are for bare html --
 .myHeader {
     display: flex;
     flex-flow: row wrap;
@@ -131,3 +132,5 @@ figcaption{
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
 }
+
+*/
