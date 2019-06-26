@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>MovieBase - A Complete Database of the Box Office</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css"> <!--Linking my style.css-->
+  <!--This is same assignment-html but with bootstrap css-->
+  <!--
+  <link rel="stylesheet" href="css/960.css"> Linking to 960.css to apply grid system
+
+  Fontawesome linked
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/solid.min.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/brands.min.css">
+  
+  Google fonts
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  -->
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+  -->
+
+  <!--Begin Page Layout-->
+
+  <header class="myHeader"> <!--Header Begins-->
+    <img class="myLogo" src="img/moviebase.jpg">
+    <div class="headSearchBar">
+      <input type="search" placeholder="Search.." name="search">
+      <button type="submit"> Search </button>
+    </div>
+    <div class="signInButton">
+      <h4><button type="submit"> <a href="#">Sign Up / Sign In</a> </button></h4>
+    </div>
+  </header> <!--Header Ends-->
+
+  <div class="myNavbar">
+  <nav> <!--Nav Bar begins here-->
+    <a href="#"><i class="fas fa-home"></i></a>
+    <a href="#">Movies</a>
+    <a href="#">Actors</a>
+    <a href="#">Some Trivia</a>
+  </nav> <!--Nav Bar ends here-->
+  </div>
+
+  <main> <!--My Main Tag Comes Here-->
+    <div  class="mainContent">
+      <h3 style="font-family: 'Ubuntu', sans-serif;">What is a movie?</h3>
+      <p style="font-family: 'Lobster', cursive;">Film, also called movie or motion picture, is a medium used to simulate experiences that communicate ideas, stories, perceptions, feelings, beauty or atmosphere by the means of recorded or programmed moving images along with other sensory stimulations. The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art form that is the result of it.</p>
+      <p style="font-family: 'Lobster', cursive;">The moving images of a film are created by photographing actual scenes with a motion-picture camera, by photographing drawings or miniature models using traditional animation techniques, by means of CGI and computer animation, or by a combination of some or all of these techniques, and other visual effects.</p>
+      <p style="font-family: 'Lobster', cursive;">Traditionally, films were recorded onto celluloid film through a photochemical process and then shown through a movie projector onto a large screen. Contemporary films are often fully digital through the entire process of production, distribution, and exhibition, while films recorded in a photochemical form traditionally included an analogous optical soundtrack (a graphic recording of the spoken words, music and other sounds that accompany the images which runs along a portion of the film exclusively reserved for it, and is not projected).</p>    
+    </div>
+  </main> <!--Main tag Ends here-->
+
+  <div class="container_12" id="favMovies"> <!--Grid Layout Added-->
+    <div class="grid_12">
+      <h3 style="font-family: 'Lobster', cursive;">Some of my favourite movies</h3>
+    </div>
+
+    <div>
+      <section>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Ironmanposter.jpg" alt="Iron Man" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Iron Man</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.9 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/hulk.jpg" alt="Hulk" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Hulk</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>6.7 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Iron_Man_2_poster.jpg" alt="Iron Man 2" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Iron Man 2</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.0 / 10</p>
+        </article>
+      </section>
+      <section>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Thor_poster.jpg" alt="Thor" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Thor</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.0 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Captain_America_The_First_Avenger_poster.jpg" alt="Captain America First Avenger" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Captain America: The First Avenger</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>6.9 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/TheAvengers2012Poster.jpg" alt="The Avengers" class="moviePoster">
+            <figcaption class="movieTitle"><h3>The Avengers</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>8.1 / 10</p>
+        </article>
+      </section>
+      <section>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.2 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.8 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>8.1 / 10</p>
+        </article>
+      </section>
+      <section>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.3 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Ant-Man_poster.jpg" alt="Ant Man" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Ant Man</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.3 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Captain_America_Civil_War_poster.jpg" alt="Civil War" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Captain America: Civil War</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.8 / 10</p>
+        </article>
+      </section>
+      <section>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Doctor_Strange_poster.jpg" alt="Doctor Strange" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Doctor Strange</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.5 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Black_Panther_film_poster.jpg" alt="Black Panther" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Black Panther</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>7.3 / 10</p>
+        </article>
+        <article class="grid_4 movieCard">
+          <figure>
+            <img src="img/moviePosters/Avengers_Infinity_War_poster.jpg" alt="Infinity War" class="moviePoster">
+            <figcaption class="movieTitle"><h3>Avengers: Infinity War</h3></figcaption>
+          </figure>
+          <p><strong>Ratings: </strong>8.5 / 10</p>
+        </article>
+      </section>
+    </div>
+  </div> <!--Grid Layout with 3 columns ends here-->
+
+  <section class="colSection"><!--Section with two vertical columns-->
+    <div class="verticalColumn" id="leftCol">
+      <article>
+      <h3 style="font-family: 'Lobster', cursive;">Marvel Cinematic Universe</h3>
+      <img src="img/moviePosters/Marvel_Cinematic_Universe_logo.png" alt="MCU logo">
+      <p style="font-family: 'Dancing Script', cursive;">The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. </p>
+      <p style="font-family: 'Dancing Script', cursive;">The franchise also includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.</p>
+      </article>
+    </div>
+    <div class="verticalColumn" id="rightCol">
+      <h3 style="font-family: 'Lobster', cursive;">The Trinity of MCU</h3>
+      <section class="heroCard">
+        <ul>
+          <li><img class="heroSymbol" src="img/moviePosters/arcreactor.jpg" alt="Arc Reactor"></li>
+          <li><p style="font-family: 'Dancing Script', cursive;">Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.</p></li>
+        </ul>      
+      </section>
+      <section class="heroCard">
+          <ul>
+            <li><img class="heroSymbol" src="img/moviePosters/CapShield05.jpg" alt="Cap's Shield"></li>
+            <li><p style="font-family: 'Dancing Script', cursive;">America’s World War II Super-Soldier continues his fight in the present as an Avenger and untiring sentinel of liberty.</p></li>
+          </ul>      
+      </section>
+      <section class="heroCard">
+          <ul>
+            <li><img class="heroSymbol" src="img/moviePosters/mjolnir.jpg" alt="Mjolnir"></li>
+            <li><p style="font-family: 'Dancing Script', cursive;">Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.</p></li>
+          </ul>      
+      </section>
+    </div>
+  </section>
+
+  <footer class="myFooter"><!--Footer comes here-->
+    <p>Don't try to copy this lame layout. Try something exciting.</p>
+    <p>Follow me on  <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>  <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>  <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a> </p>
+  </footer><!--Footer ends-->
+
+  <!--End Page Layout-->
+
+  <!--All the JavaScript is down here-->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
