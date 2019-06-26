@@ -134,3 +134,68 @@ figcaption{
 }
 
 */
+
+#carouselSlide1{
+    background: black;
+    height: 500px;
+}
+
+#carouselSlide2{
+    background: lightslategrey;
+    height: 500px;
+}
+
+#carouselSlide3{
+    background: gray;
+    height: 500px;
+}
+
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	#myCarousel .carousel-item{
+        height: 310px;
+    }
+    
+    #carouselSlide1{
+        background: black
+    }
+    
+    #carouselSlide2{
+        background: lightslategray;
+    }
+    
+    #carouselSlide3{
+        background: gray;
+    }	
+
+    .carousel-caption{
+        font-size: 16px;
+    }
+    
+    .carousel-caption h4{
+        font-size: 22px;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    #myCarousel .carousel-item{
+        height: 500px;
+    }
+    
+    #carouselSlide1{
+        background: black
+    }
+    
+    #carouselSlide2{
+        background: lightslategray;
+    }
+    
+    #carouselSlide3{
+        background: gray;
+    }	
+}
