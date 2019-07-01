@@ -6,6 +6,7 @@
   <title>MovieBase - A Complete Database of the Box Office</title>
   <meta name="description" content="This is assignment on bootstrap where I've designed a demo of my imdB">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Iron Man, Captain America, Thor, Hulk, Avengers, Civil War, Infinity War, Age of Ultron, Marvel Cinematic Universe, Black Panther, Ant Man, Dr. Strange, Stanley Kubrick, Film Making, Actors">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -14,21 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css"> <!--Linking my style.css-->
-  <!--This is same assignment-html but with bootstrap css-->
-  <!--
-  <link rel="stylesheet" href="css/960.css"> Linking to 960.css to apply grid system
-
-  Fontawesome linked
-  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/fontawesome.min.css">
-  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/solid.min.css">
-  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.9.0-web/css/brands.min.css">
   
-  Google fonts
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-  -->
 
   <!--Linking the bootstrap css here-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -48,240 +35,45 @@
     <p>Hello world! This is HTML5 Boilerplate.</p>
   -->
 
-  <!--Begin Page Layout
-   
-  -- This is layout using only html
-  <header class="myHeader"> Header Begins
-    <img class="myLogo" src="img/moviebase.jpg">
-    <div class="headSearchBar">
-      <input type="search" placeholder="Search.." name="search">
-      <button type="submit"> Search </button>
-    </div>
-    <div class="signInButton">
-      <h4><button type="submit"> <a href="#">Sign Up / Sign In</a> </button></h4>
-    </div>
-  </header> Header Ends
-
-  <div class="myNavbar">
-  <nav> Nav Bar begins here
-    <a href="#"><i class="fas fa-home"></i></a>
-    <a href="#">Movies</a>
-    <a href="#">Actors</a>
-    <a href="#">Some Trivia</a>
-  </nav> Nav Bar ends here
-  </div>
-
-  <main> My Main Tag Comes Here
-    <div  class="mainContent">
-      <h3 style="font-family: 'Ubuntu', sans-serif;">What is a movie?</h3>
-      <p style="font-family: 'Lobster', cursive;">Film, also called movie or motion picture, is a medium used to simulate experiences that communicate ideas, stories, perceptions, feelings, beauty or atmosphere by the means of recorded or programmed moving images along with other sensory stimulations. The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art form that is the result of it.</p>
-      <p style="font-family: 'Lobster', cursive;">The moving images of a film are created by photographing actual scenes with a motion-picture camera, by photographing drawings or miniature models using traditional animation techniques, by means of CGI and computer animation, or by a combination of some or all of these techniques, and other visual effects.</p>
-      <p style="font-family: 'Lobster', cursive;">Traditionally, films were recorded onto celluloid film through a photochemical process and then shown through a movie projector onto a large screen. Contemporary films are often fully digital through the entire process of production, distribution, and exhibition, while films recorded in a photochemical form traditionally included an analogous optical soundtrack (a graphic recording of the spoken words, music and other sounds that accompany the images which runs along a portion of the film exclusively reserved for it, and is not projected).</p>    
-    </div>
-  </main> Main tag Ends here
-
-  <div class="container_12" id="favMovies"> Grid Layout Added
-    <div class="grid_12">
-      <h3 style="font-family: 'Lobster', cursive;">Some of my favourite movies</h3>
-    </div>
-
-    <div>
-      <section>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Ironmanposter.jpg" alt="Iron Man" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Iron Man</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.9 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/hulk.jpg" alt="Hulk" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Hulk</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>6.7 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Iron_Man_2_poster.jpg" alt="Iron Man 2" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Iron Man 2</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.0 / 10</p>
-        </article>
-      </section>
-      <section>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Thor_poster.jpg" alt="Thor" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Thor</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.0 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Captain_America_The_First_Avenger_poster.jpg" alt="Captain America First Avenger" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Captain America: The First Avenger</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>6.9 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/TheAvengers2012Poster.jpg" alt="The Avengers" class="moviePoster">
-            <figcaption class="movieTitle"><h3>The Avengers</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>8.1 / 10</p>
-        </article>
-      </section>
-      <section>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.2 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.8 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>8.1 / 10</p>
-        </article>
-      </section>
-      <section>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.3 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Ant-Man_poster.jpg" alt="Ant Man" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Ant Man</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.3 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Captain_America_Civil_War_poster.jpg" alt="Civil War" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Captain America: Civil War</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.8 / 10</p>
-        </article>
-      </section>
-      <section>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Doctor_Strange_poster.jpg" alt="Doctor Strange" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Doctor Strange</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.5 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Black_Panther_film_poster.jpg" alt="Black Panther" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Black Panther</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>7.3 / 10</p>
-        </article>
-        <article class="grid_4 movieCard">
-          <figure>
-            <img src="img/moviePosters/Avengers_Infinity_War_poster.jpg" alt="Infinity War" class="moviePoster">
-            <figcaption class="movieTitle"><h3>Avengers: Infinity War</h3></figcaption>
-          </figure>
-          <p><strong>Ratings: </strong>8.5 / 10</p>
-        </article>
-      </section>
-    </div>
-  </div> Grid Layout with 3 columns ends here
-
-  <section class="colSection"> Section with two vertical columns
-    <div class="verticalColumn" id="leftCol">
-      <article>
-      <h3 style="font-family: 'Lobster', cursive;">Marvel Cinematic Universe</h3>
-      <img src="img/moviePosters/Marvel_Cinematic_Universe_logo.png" alt="MCU logo">
-      <p style="font-family: 'Dancing Script', cursive;">The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. </p>
-      <p style="font-family: 'Dancing Script', cursive;">The franchise also includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.</p>
-      </article>
-    </div>
-    <div class="verticalColumn" id="rightCol">
-      <h3 style="font-family: 'Lobster', cursive;">The Trinity of MCU</h3>
-      <section class="heroCard">
-        <ul>
-          <li><img class="heroSymbol" src="img/moviePosters/arcreactor.jpg" alt="Arc Reactor"></li>
-          <li><p style="font-family: 'Dancing Script', cursive;">Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.</p></li>
-        </ul>      
-      </section>
-      <section class="heroCard">
-          <ul>
-            <li><img class="heroSymbol" src="img/moviePosters/CapShield05.jpg" alt="Cap's Shield"></li>
-            <li><p style="font-family: 'Dancing Script', cursive;">America’s World War II Super-Soldier continues his fight in the present as an Avenger and untiring sentinel of liberty.</p></li>
-          </ul>      
-      </section>
-      <section class="heroCard">
-          <ul>
-            <li><img class="heroSymbol" src="img/moviePosters/mjolnir.jpg" alt="Mjolnir"></li>
-            <li><p style="font-family: 'Dancing Script', cursive;">Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.</p></li>
-          </ul>      
-      </section>
-    </div>
-  </section>
-
-  <footer class="myFooter">Footer comes here 
-    <p>Don't try to copy this lame layout. Try something exciting.</p>
-    <p>Follow me on  <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>  <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>  <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a> </p>
-  </footer>  Footer ends-->
-
-  <!--End Page Layout-->
-
   <!--Beginning page layout with bootstrap in it-->
 
   <div class="container" id="main"><!--Main Container is here-->
 
     <header> <!--My Header Begins here-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <!--My Nav Bar with Logo-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"><img src="img/moviebase.jpg" width="80" height="80" alt="MovieBase"></a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Movies</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Actors</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Fun Facts</a>
-            </li>
-            <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                </form>
-            </li>
-          </ul>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <!--My Nav Bar with Logo-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img src="img/moviebase.jpg" width="80" height="80" alt="MovieBase"></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Actors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Fun Facts</a>
+              </li>
+              <li class="nav-item">
+                  <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                  </form>
+              </li>
+            </ul>
+            
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signInModal"> Sign Up / Sign In </button>
           
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signInModal"> Sign Up / Sign In </button>
-        
-        </div>
-    </nav> <!--Navbar ends here-->
+          </div>
+      </nav> <!--Navbar ends here-->
     </header> <!--My Header ends here-->
 
-    <div class="modal fade" id="signInModal"> <!--MOdal view begins here-->
+    <div class="modal fade" id="signInModal"> <!--Modal view begins here-->
         <div class="modal-dialog">
           <div class="modal-content">
             <section class="modal-body">
@@ -294,7 +86,7 @@
                     </li>
                 </ul>
 
-                <div class="tab-content">
+                <div class="tab-content"><!--Tabbed pane begins here-->
                 <form class="tab-pane active form-horizontal" id="tabLogIn">
                     <div class="form-group">
                       <label class="col-lg-2 control-label" for="inputEmail">Email</label>
@@ -341,268 +133,268 @@
                     </div>
                 </form>
 
-                </div>
+                </div><!--Tabbed pane ends here-->
             </section>
           </div>
         </div>
     </div> <!--Modal View ends here-->
 
-    <div class="pageCarousel"> <!--Carousel Begins Here-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" id="carouselSlide1">
-              <div class="carousel-caption d-none d-md-block">
-                <h4>Film Making</h4>
-              </div>
-            </div>
-            <div class="carousel-item" id="carouselSlide2">
-              <div class="carousel-caption d-none d-md-block">
-                <h4>Act to make an Impact</h4>
-              </div>
-            </div>
-            <div class="carousel-item" id="carouselSlide3">
-              <div class="carousel-caption d-none d-md-block">
-                <h4>Know More</h4>
-              </div>
+    <div> <!--Carousel Begins Here-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="carouselSlide1">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Film Making</h4>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item" id="carouselSlide2">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Act to make an Impact</h4>
+            </div>
+          </div>
+          <div class="carousel-item" id="carouselSlide3">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Know More</h4>
+            </div>
+          </div>
         </div>
-      </div><!--Carousel Ends Here-->
-
-      <div><!--This is a Jumbotron-->
-        <div class="jumbotron">
-            <h1 class="display-5">If it can be written or thought, it can be <strong>"filmed".</strong></h1>
-            <p class="lead text-right"> - by <strong>Stanley Kubrick</strong></p>
-        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+    </div><!--Carousel Ends Here-->
 
-      <div class="container-fluid"> <!--Grid Layout begins Here-->
+    <div><!--This is a Jumbotron-->
+      <div class="jumbotron">
+          <h1 class="display-5">If it can be written or thought, it can be <strong>"filmed".</strong></h1>
+          <p class="lead text-right"> - by <strong>Stanley Kubrick</strong></p>
+      </div>
+    </div>
 
-        <h3 class="text-center">List of Movies in Marvel Cinematic Universe</h3>
-        <section class="row">
+    <div class="container-fluid"> <!--Grid Layout begins Here-->
+
+      <h3 class="text-center">List of Movies in Marvel Cinematic Universe</h3>
+      <section class="row">
+        <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+            <figure>
+                <img src="img/moviePosters/Ironmanposter.jpg" alt="Iron Man" class="moviePoster">
+                <figcaption class="movieTitle"><h3>Iron Man</h3></figcaption>
+            </figure>
+            <p><strong>Ratings: </strong>7.9 / 10</p>
+            <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+        </article>
+        <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+            <figure>
+                <img src="img/moviePosters/hulk.jpg" alt="Hulk" class="moviePoster">
+                <figcaption class="movieTitle"><h3>Hulk</h3></figcaption>
+            </figure>
+            <p><strong>Ratings: </strong>6.7 / 10</p>
+            <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+        </article>
+        <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+            <figure>
+                <img src="img/moviePosters/Iron_Man_2_poster.jpg" alt="Iron Man 2" class="moviePoster">
+                <figcaption class="movieTitle"><h3>Iron Man 2</h3></figcaption>
+            </figure>
+            <p><strong>Ratings: </strong>7.0 / 10</p>
+            <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+        </article>
+      </section>
+
+      <section class="row">
           <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
               <figure>
-                  <img src="img/moviePosters/Ironmanposter.jpg" alt="Iron Man" class="moviePoster">
-                  <figcaption class="movieTitle"><h3>Iron Man</h3></figcaption>
-              </figure>
-              <p><strong>Ratings: </strong>7.9 / 10</p>
-              <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-          </article>
-          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-              <figure>
-                  <img src="img/moviePosters/hulk.jpg" alt="Hulk" class="moviePoster">
-                  <figcaption class="movieTitle"><h3>Hulk</h3></figcaption>
-              </figure>
-              <p><strong>Ratings: </strong>6.7 / 10</p>
-              <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-          </article>
-          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-              <figure>
-                  <img src="img/moviePosters/Iron_Man_2_poster.jpg" alt="Iron Man 2" class="moviePoster">
-                  <figcaption class="movieTitle"><h3>Iron Man 2</h3></figcaption>
+                  <img src="img/moviePosters/Thor_poster.jpg" alt="Thor">
+                  <figcaption class="movieTitle"><h3>Thor</h3></figcaption>
               </figure>
               <p><strong>Ratings: </strong>7.0 / 10</p>
               <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
           </article>
-        </section>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Captain_America_The_First_Avenger_poster.jpg" alt="Captain America First Avenger" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Captain America: The First Avenger</h3></figcaption>
+              </figure>
+              <p><strong>Ratings: </strong>6.9 / 10</p>
+              <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/TheAvengers2012Poster.jpg" alt="The Avengers" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>The Avengers</h3></figcaption>
+              </figure>
+              <p><strong>Ratings: </strong>8.1 / 10</p>
+              <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+      </section>
 
-        <section class="row">
+      <section class="row">
             <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
                 <figure>
-                    <img src="img/moviePosters/Thor_poster.jpg" alt="Thor">
-                    <figcaption class="movieTitle"><h3>Thor</h3></figcaption>
-                </figure>
-                <p><strong>Ratings: </strong>7.0 / 10</p>
-                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Captain_America_The_First_Avenger_poster.jpg" alt="Captain America First Avenger" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Captain America: The First Avenger</h3></figcaption>
-                </figure>
-                <p><strong>Ratings: </strong>6.9 / 10</p>
-                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/TheAvengers2012Poster.jpg" alt="The Avengers" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>The Avengers</h3></figcaption>
-                </figure>
-                <p><strong>Ratings: </strong>8.1 / 10</p>
-                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-        </section>
-
-        <section class="row">
-              <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                  <figure>
-                      <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
-                      <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
-                    </figure>
-                    <p><strong>Ratings: </strong>7.2 / 10</p>
-                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-              </article>
-              <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                  <figure>
-                      <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
-                      <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
-                    </figure>
-                    <p><strong>Ratings: </strong>7.8 / 10</p>
-                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-              </article>
-              <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                  <figure>
-                      <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
-                      <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
-                    </figure>
-                    <p><strong>Ratings: </strong>8.1 / 10</p>
-                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-              </article>
-        </section>
-
-        <section class="row">
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
+                    <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
                   </figure>
-                  <p><strong>Ratings: </strong>7.3 / 10</p>
+                  <p><strong>Ratings: </strong>7.2 / 10</p>
                   <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
             </article>
             <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
                 <figure>
-                    <img src="img/moviePosters/Ant-Man_poster.jpg" alt="Ant Man" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Ant Man</h3></figcaption>
-                  </figure>
-                  <p><strong>Ratings: </strong>7.3 / 10</p>
-                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Captain_America_Civil_War_poster.jpg" alt="Civil War" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Captain America: Civil War</h3></figcaption>
+                    <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
                   </figure>
                   <p><strong>Ratings: </strong>7.8 / 10</p>
                   <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
             </article>
-        </section>
+            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+                <figure>
+                    <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
+                  </figure>
+                  <p><strong>Ratings: </strong>8.1 / 10</p>
+                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+            </article>
+      </section>
 
-        <section class="row">
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Doctor_Strange_poster.jpg" alt="Doctor Strange" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Doctor Strange</h3></figcaption>
-                  </figure>
-                  <p><strong>Ratings: </strong>7.5 / 10</p>
-                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Black_Panther_film_poster.jpg" alt="Black Panther" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Black Panther</h3></figcaption>
-                  </figure>
-                  <p><strong>Ratings: </strong>7.3 / 10</p>
-                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-            <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
-                <figure>
-                    <img src="img/moviePosters/Avengers_Infinity_War_poster.jpg" alt="Infinity War" class="moviePoster">
-                    <figcaption class="movieTitle"><h3>Avengers: Infinity War</h3></figcaption>
-                  </figure>
-                  <p><strong>Ratings: </strong>8.5 / 10</p>
-                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Watch Trailer</a>
-                  <a class="dropdown-item" href="#">Watch Movie</a>
-                  <a class="dropdown-item" href="#">Movie Facts</a>
-              </div>
-            </article>
-        </section>
-        
-      </div><!--Grid Layout Ends here-->
+      <section class="row">
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>7.3 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Ant-Man_poster.jpg" alt="Ant Man" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Ant Man</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>7.3 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Captain_America_Civil_War_poster.jpg" alt="Civil War" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Captain America: Civil War</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>7.8 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+      </section>
+
+      <section class="row">
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Doctor_Strange_poster.jpg" alt="Doctor Strange" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Doctor Strange</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>7.5 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Black_Panther_film_poster.jpg" alt="Black Panther" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Black Panther</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>7.3 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+          <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
+              <figure>
+                  <img src="img/moviePosters/Avengers_Infinity_War_poster.jpg" alt="Infinity War" class="moviePoster">
+                  <figcaption class="movieTitle"><h3>Avengers: Infinity War</h3></figcaption>
+                </figure>
+                <p><strong>Ratings: </strong>8.5 / 10</p>
+                <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Watch Trailer</a>
+                <a class="dropdown-item" href="#">Watch Movie</a>
+                <a class="dropdown-item" href="#">Movie Facts</a>
+            </div>
+          </article>
+      </section>
+      
+    </div><!--Grid Layout Ends here-->
 
       
 
