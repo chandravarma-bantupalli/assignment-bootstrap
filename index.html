@@ -37,41 +37,48 @@
 
   <!--Beginning page layout with bootstrap in it-->
 
-  <div class="container" id="main"><!--Main Container is here-->
-
-    <header> <!--My Header Begins here-->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <!--My Nav Bar with Logo-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"><img src="img/moviebase.jpg" width="80" height="80" alt="MovieBase"></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Actors</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Fun Facts</a>
-              </li>
-              <li class="nav-item">
-                  <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                  </form>
-              </li>
-            </ul>
-            
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signInModal"> Sign Up / Sign In </button>
+  <header> <!--My Header Begins here-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <!--My Nav Bar with Logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img src="img/moviebase.jpg" width="80" height="80" alt="MovieBase"></a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Actors</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link btn dropdown-toggle" role="button" href="#" id="headerDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fun Facts</a>
+              <div class="dropdown-menu" aria-labelledby="headerDropDown">
+                  <h6 class="dropdown-header">Fun Facts About</h6>
+                  <a class="dropdown-item" href="#">Movies</a>
+                  <a class="dropdown-item" href="#">Actors</a>
+                  <a class="dropdown-item" href="#">Film Making</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+          </ul>
           
-          </div>
-      </nav> <!--Navbar ends here-->
-    </header> <!--My Header ends here-->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signInModal"> Sign Up / Sign In </button>
+        
+        </div>
+    </nav> <!--Navbar ends here-->
+  </header> <!--My Header ends here-->
+
+
+  <div class="container" id="main"><!--Main Container is here-->
 
     <div class="modal fade" id="signInModal"> <!--Modal view begins here-->
         <div class="modal-dialog">
@@ -234,11 +241,11 @@
               </figure>
               <p><strong>Ratings: </strong>7.0 / 10</p>
               <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Watch Trailer</a>
+                  <a class="dropdown-item" href="#">Watch Movie</a>
+                  <a class="dropdown-item" href="#">Movie Facts</a>
+              </div>
           </article>
           <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
               <figure>
@@ -247,11 +254,11 @@
               </figure>
               <p><strong>Ratings: </strong>6.9 / 10</p>
               <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Watch Trailer</a>
+                  <a class="dropdown-item" href="#">Watch Movie</a>
+                  <a class="dropdown-item" href="#">Movie Facts</a>
+              </div>
           </article>
           <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
               <figure>
@@ -260,11 +267,11 @@
               </figure>
               <p><strong>Ratings: </strong>8.1 / 10</p>
               <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Watch Trailer</a>
+                  <a class="dropdown-item" href="#">Watch Movie</a>
+                  <a class="dropdown-item" href="#">Movie Facts</a>
+              </div>
           </article>
       </section>
 
@@ -273,40 +280,40 @@
                 <figure>
                     <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
                     <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
-                  </figure>
+                </figure>
                   <p><strong>Ratings: </strong>7.2 / 10</p>
                   <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Watch Trailer</a>
+                      <a class="dropdown-item" href="#">Watch Movie</a>
+                      <a class="dropdown-item" href="#">Movie Facts</a>
+                  </div>
             </article>
             <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
                 <figure>
                     <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
                     <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
-                  </figure>
+                </figure>
                   <p><strong>Ratings: </strong>7.8 / 10</p>
                   <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Watch Trailer</a>
+                      <a class="dropdown-item" href="#">Watch Movie</a>
+                      <a class="dropdown-item" href="#">Movie Facts</a>
+                  </div>
             </article>
             <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
                 <figure>
                     <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
                     <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
-                  </figure>
+                </figure>
                   <p><strong>Ratings: </strong>8.1 / 10</p>
                   <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Watch Trailer</a>
+                      <a class="dropdown-item" href="#">Watch Movie</a>
+                      <a class="dropdown-item" href="#">Movie Facts</a>
+                  </div>
             </article>
       </section>
 
@@ -315,14 +322,14 @@
               <figure>
                   <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
                   <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
-                </figure>
+              </figure>
                 <p><strong>Ratings: </strong>7.3 / 10</p>
                 <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Watch Trailer</a>
-                <a class="dropdown-item" href="#">Watch Movie</a>
-                <a class="dropdown-item" href="#">Movie Facts</a>
-            </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Watch Trailer</a>
+                    <a class="dropdown-item" href="#">Watch Movie</a>
+                    <a class="dropdown-item" href="#">Movie Facts</a>
+                </div>
           </article>
           <article class="col-sm-12 col-lg-4 col-xl-4 col-md-6 text-center">
               <figure>
@@ -395,8 +402,6 @@
       </section>
       
     </div><!--Grid Layout Ends here-->
-
-      
 
   </div><!--Main container Ends here-->
 
